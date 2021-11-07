@@ -5,8 +5,6 @@ using namespace std;
  Around 95th term the function start producing wrong results
  due to integer overflow
  
- Will try to fix later
- 
  */
 unsigned long long fibonacci(int n){
   vector<unsigned long long> fib_nums{0, 1};
