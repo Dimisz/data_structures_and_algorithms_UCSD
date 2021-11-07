@@ -11,7 +11,7 @@ using namespace std;
 unsigned long long fibonacci(int n){
   vector<unsigned long long> fib_nums{0, 1};
   
-  for (int i = 1; i < n; i++){
+  for (int i = 1; i <= n; i++){
     int last_index, before_last_index;
     
     last_index = fib_nums.size() - 1;
@@ -22,16 +22,16 @@ unsigned long long fibonacci(int n){
     //cout << fib_nums[last_index] << endl;
  }
   
-return fib_nums[n-1];
+return fib_nums[n];
 }
 
 int main(){
-  cout << "Enter the number in Fibonacci sequence you would like to see: " << endl;
+//  cout << "Enter the number in Fibonacci sequence you would like to see: " << endl;
   int n;
   cin >> n;
   //fibonacci(n);
   unsigned long long answer = fibonacci(n);
-  cout << "Number " << n << " in Fibonacci sequence is " << answer << endl;
-  
+//  cout << "Number " << n << " in Fibonacci sequence is " << answer << endl;
+  cout << answer;
   return 0;
 }
